@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con1">
+        <center><h1>General nutrition and intake calculator</h1></center> <br>
+        <form action="GET">
+            <p>What is your age ?</p>
+            <input type="number" id="age" placeholder="Years"> <br>
+            <p>How tall are you ? (cm)</p>
+            <input type="number" id="height1" placeholder="Measure 1">
+            <input type="number" id="height2" placeholder="Measure 2">
+            <input type="number" id="height3" placeholder="Measure 3">
+            <p>How much do you weight ? (kg)</p>
+            <input type="number" id="weight1" placeholder="Measure 1">
+            <input type="number" id="weight2" placeholder="Measure 2">
+            <input type="number" id="weight3" placeholder="Measure 3">
+            <p>What is the diameter of yur neck ? (cm)</p>
+            <input type="number" id="neck1" placeholder="Measure 1">
+            <input type="number" id="neck2" placeholder="Measure 2">
+            <input type="number" id="neck3" placeholder="Measure 3">
+            <p>What is the diameter of yur abdomen ? (cm)</p>
+            <input type="number" id="abs1" placeholder="Measure 1">
+            <input type="number" id="abs2" placeholder="Measure 2">
+            <input type="number" id="abs3" placeholder="Measure 3">
+            <p>How much time do you exersice per day ? (min)</p>
+            <input type="number" id="exer" placeholder="Min"> <br>
+            <p>What is your activity label:</p>
+                <select name="operationslist" id="oper">
+                    <option value="sedentary">Sedentary</option>
+                    <option value="active">Active</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="Athlete">Athlete</option>
+                </select> <br> <br>
+            </form>
+            <center><button type="button" onclick="calcEvery()">Calculate</button></center>
+        </form>
+    </div>
+    <div class="con2" id="container2">
+        <h1>Report</h1>
+
+        <p id="report" ></p>
+
+        <h3>Averages</h3>
+        <output id="AverageHeight"></output>
+        <ul>
+            <li id="averheightul" class="averH"></li>
+        </ul>
+        <ul>
+            <li id="averweightul" class="averH"></li>
+        </ul>
+        <ul>
+            <li id="averneckul" class="averH"></li>
+        </ul>
+        <ul>
+            <li id="averabsul" class="averH"></li>
+        </ul>
+        <h3>Body Mass Index (BMI)</h3>
+        <output id="BMI"></output>
+        <h3>General Body Fat (GBF)</h3>
+        <output id="GBF"></output>
+        <h3>Bassal Metabolic Rate (BMR)</h3>
+        <output id="BMR"></output>
+        <h1>Intakes</h1>
+        <h3>Water</h3>
+        <output id="WaterIntake"></output>
+        <h3>Calories</h3>
+        <output id="Calories"></output>
+        <h3>Protein</h3>
+        <output id="Protein"></output>
+        <h3>Carbs</h3>
+        <output id="Carbs"></output>
+        <h3>Fat</h3>
+        <output id="Fat"></output>
+        
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
