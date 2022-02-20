@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tic tac toe, game">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="tictactoe-container">
+    <h1 style="text-align: center; padding:5% 0px;">Tic Tac Toe</h1>
+    <hr style="max-width: 80%; background-color: black; height: 2px; margin: auto;">
+    <div class="body">
+        <div class="game">
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+            <div id="playgrnd"></div>
+        </div>
+    </div>
+ </div>
+ <div id="reStart">
+    <h1 id="Winner_message" style="padding-top: 20%; color: white;"></h1>
+    <button onClick="window.location.reload();" class="playAgain" >Play again</button>
+ </div>
+</body>
+<script src="main.js"></script>
+</html>
