@@ -10,6 +10,21 @@
     align-items: center;
     text-align: center;
 }
+#tictactoe-container{
+    display: none;
+}
+#SingelOrMulty{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#SingelOrMulty button{
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
 .game{
     background-color: black;
     width: 40%;
@@ -40,6 +55,7 @@
     margin-top: 10%;
     padding: 10px; 
     border-radius: 10px;
+    border: none;
 }
 .playAgain:hover {
     margin-top: 10%;
@@ -47,5 +63,6 @@
     border-radius: 10px;
     background-color: black;
     color: white;
+    padding:10px 20px;
     transition-duration: 0.7s;
 }
